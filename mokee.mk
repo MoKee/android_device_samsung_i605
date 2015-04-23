@@ -5,15 +5,15 @@ PRODUCT_RELEASE_NAME := i605
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common MK stuff.
+$(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/i605/full_i605.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := i605
-PRODUCT_NAME := cm_i605
+PRODUCT_NAME := mk_i605
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SCH-I605
 PRODUCT_MANUFACTURER := samsung
